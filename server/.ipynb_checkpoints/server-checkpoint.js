@@ -21,7 +21,6 @@ let playerTwoScore = 0;
 let nodeStorage = [];
 
 io.on('connection', (socket) => {
-  // console.log('LocalStorage UserId: ', socket.handshake.query.userId)
   console.log(`user ${socket.id} is connected.`)
 
   socket.on('send-player-storage', (data) => {
